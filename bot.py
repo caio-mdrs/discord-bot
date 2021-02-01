@@ -10,8 +10,10 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    #Add reaction on messages
     emoji = '\N{THUMBS UP SIGN}'
     await message.add_reaction(emoji)
+    
     #print message on terminal
     print(f"Name:{message.author.name}, ID: {message.author.id}, Mensagem: {message.content}")
 
